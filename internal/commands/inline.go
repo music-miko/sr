@@ -76,7 +76,7 @@ func handleInlineQuery(c *td.Client, ctx *td.Context) error {
 
 	var results []td.InputInlineQueryResult
 	urlHash := setCachedURL(targetUrl)
-	caption := "Join @FallenProjects"
+	caption := "Join @ArcUpdates"
 
 	mediaList := getAllMedia(snapData)
 	if len(mediaList) == 0 {
@@ -173,7 +173,7 @@ func handleInlineCallbackQuery(c *td.Client, ctx *td.Context) error {
 
 	media := mediaList[index]
 	markup := createNavigationMarkup(urlHash, index, len(mediaList))
-	caption := "Join @FallenProjects"
+	caption := "Join @ArcUpdates"
 
 	var content td.InputMessageContent
 	if media.Type == "video" || media.Type == "animation" {
