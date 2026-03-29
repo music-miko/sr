@@ -122,7 +122,7 @@ func youtubeHandler(c *gotdbot.Client, ctx *gotdbot.Context) error {
 	defer os.RemoveAll(tempDir)
 
 	escapedTitle := html.EscapeString(title)
-	caption := fmt.Sprintf("<b>%s</b>\n\nJoin @FallenProjects", escapedTitle)
+	caption := fmt.Sprintf("<b>%s</b>\n\nJoin @ArcUpdates", escapedTitle)
 	input := &gotdbot.InputFileLocal{Path: filePath}
 
 	var thumbInput *gotdbot.InputThumbnail
@@ -179,7 +179,7 @@ func ytCommandHandler(c *gotdbot.Client, ctx *gotdbot.Context) error {
 	defer os.RemoveAll(tempDir)
 
 	escapedTitle := html.EscapeString(title)
-	caption := fmt.Sprintf("<b>%s</b>\n\nJoin @FallenProjects", escapedTitle)
+	caption := fmt.Sprintf("<b>%s</b>\n\nJoin @ArcUpdates", escapedTitle)
 	input := &gotdbot.InputFileLocal{Path: filePath}
 
 	var thumbInput *gotdbot.InputThumbnail
