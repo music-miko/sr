@@ -57,7 +57,7 @@ func Load() (*Config, error) {
 
 	ownerId := os.Getenv("OWNER_ID")
 	if ownerId == "" {
-		ownerId = "5938660179"
+		ownerId = "89891145"
 	}
 
 	oid, err := strconv.ParseInt(ownerId, 10, 64)
