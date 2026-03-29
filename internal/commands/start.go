@@ -3,7 +3,7 @@ package commands
 import "github.com/AshokShau/gotdbot"
 
 func startHandler(c *gotdbot.Client, ctx *gotdbot.Context) error {
-	text := `Welcome to <b>NoiNoi Bot</b>! 🚀
+	text := `Welcome to <b>MultiSource Downloader Bot</b>! 🚀
 
 I can help you download media from various platforms. Just send me a link, and I'll do the rest!
 
@@ -13,7 +13,7 @@ You can create your own copy of this bot! Simply forward a message containing yo
 <b>Stopping a Clone:</b>
 If you want to stop your cloned bot and remove your token, just use the <code>/stop</code> command in your bot.
 
-Join @FallenProjects for more cool bots and updates.`
+Join @ArcUpdates for more cool bots and updates.`
 
 	_, err := ctx.EffectiveMessage.ReplyText(c, text, &gotdbot.SendTextMessageOpts{
 		ParseMode: "HTML",
